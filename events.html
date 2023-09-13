@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<!--Created by Dudyala,Puppala,Pathapally-->
+	<head>
+		<meta content = "text/html" charset = "utf-8">
+		<title>School Web Page</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="project.js"></script>
+		<link rel="stylesheet" href="project.css">
+		<style type = "text/css">
+			li	{display:inline-block; padding:4px; width:120px; list-style-type:none;}
+			img {border:1px solid black; padding:5px; width:100px;}
+			body{margin:50px;}
+			table,tr,td{border:1px solid black;
+						border-collapse:collapse;
+						padding:5px;}
+		</style>
+	</head>
+	
+	<body style="background-image: url('../Client-side Project/Images/bgimage.png');background-size: cover;">
+	
+ 
+		<h1 align = "center" style="background-color:#F56537;margin-top: 0px;font-size: 45px;">Missouri International School</h1>
+		<input style="background:#3630a3;color:white;" type = "button" id = "homeButton" value = "Home">
+		<input style="background:#3630a3;color:white;" type = "button" id = "contactButton" value = "Contact Us">
+		
+		
+		<p align="center"><img src = "../Client-side Project//Images/schoolLogo.jpg" alt = "school Logo" style="width: 150px;
+			height: 150px;"></p>
+		
+		<div class ="banner">
+			<div onmouseover='mouseOverToggle()' onmouseout='mouseOutToggle()' id='new' class='child new'><b>About MIS</b>
+			   <div id='dropdownoverview' class="new dropdown">
+				 <a href="overview.html" id = "overView">Overview</a><br>
+				 <a href="campus.html" id = "misCampus">MIS Campus</a>
+			   </div>
+			</div><br>
+				
+			<div onmouseover='mouseOverToggle1()' onmouseout='mouseOutToggle1()' id='new' class='child new'><b>Academics</b>
+			   <div id='dropdownoverview1' class="new dropdown">
+				 <a href="elementary.html" id = "elementary">Elementary</a><br>
+				 <a href="secondary.html" id = "secondary">Secondary</a><br>
+				 <a href="assessment.html" id = "assessment">Assessment</a><br>
+			   </div>
+			</div>
+			
+			<div onmouseover='mouseOverToggle2()' onmouseout='mouseOutToggle2()' id='new' class='child new'><b>Admissions</b>
+			   <div id='dropdownoverview2' class="new dropdown">
+				 <a href="books.html" id = "showBooks">Books</a><br>
+				 <a href="applyingToMIS.html" id = "applyingToMIS">Applying to MIS</a><br>
+			   </div>
+			</div>
+			
+			<div onmouseover='mouseOverToggle3()' onmouseout='mouseOutToggle3()' id='new' class='child new'><b>Life @ MIS</b>
+			   <div id='dropdownoverview3' class="new dropdown">
+				 <a href="athletics.html" id = "athletics">Athletics</a><br>
+				 <a href="coActivities.html" id = "coActivities">Co-Curricular Activities</a><br>
+				 <a href="events.html" id = "events">Events</a><br>
+			   </div>
+			</div>
+		</div>
+		
+		<p><input type = "button" id = "eventsButton" value= "Show Events">
+		   <!--<input type = "button" id = "clearButton" value = "Clear Table">--></p>
+		
+		<table id = "eventsTable"></table>
+	</body>
+</html>
